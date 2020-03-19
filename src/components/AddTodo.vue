@@ -8,7 +8,8 @@
 </template>
 
 <script>
-import { uuid }from 'vue-uuid';
+// This is commented because jsonPlaceholder by default set id to a item in post request.
+// import { uuid }from 'vue-uuid';
 export default {
     name: 'AddTodo',
     data() {
@@ -20,7 +21,7 @@ export default {
         addTodo(e) {
             e.preventDefault();
             const newTodo = {
-                id: uuid.v4(),
+                // id: uuid.v4(),
                 title: this.title,
                 completed: false
             }
